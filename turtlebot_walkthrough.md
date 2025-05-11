@@ -35,8 +35,8 @@ Step 15: Finally, within the docker container (in VS Code) run **. ~/run_ros_bri
 
 
 ### To Test the Bridge
-Publish a twist message that should make the robot move forwards. Be ready with a message to stop it before it gets too far!
+Publish a twist message that should make the robot move forwards. Be ready with a message to stop it before it gets too far! Run these lines inside the docker container:
 
-**ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"**
+**sourceros2 && ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"**
 
-**ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"**
+**sourceros2 && ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"**
